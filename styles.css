@@ -2,9 +2,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-text-color: rgb(0, 1, 18);
+    --subheading-grey-color: rgb(130, 143, 163);
+    --main-theme-color: rgb(99, 95, 199);    
+}
+
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
-    color: rgb(0, 1, 18);
+    color: var(--main-text-color);
     font-size: 13px;
     font-weight: bold;
     margin: 0;
@@ -21,7 +27,7 @@ body {
 .nav-boards-links {
     font-size: 12px;
     letter-spacing: 2.4px;
-    color: rgb(130, 143, 163);
+    color: var(--subheading-grey-color);
     text-transform: uppercase;
 }
 
@@ -30,7 +36,7 @@ body {
     color: #fff;
     width: 276px;
     height: 48px;
-    background: rgb(99, 95, 199);
+    background: var(--main-theme-color);
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
 }
