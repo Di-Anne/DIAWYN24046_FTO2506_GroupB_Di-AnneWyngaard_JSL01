@@ -5,7 +5,8 @@
 :root {
     --main-text-color: rgb(0, 1, 18);
     --subheading-grey-color: rgb(130, 143, 163);
-    --main-theme-color: rgb(99, 95, 199);    
+    --main-theme-color: rgb(99, 95, 199); 
+    --background-white-color: #fff;   
 }
 
 body {
@@ -16,8 +17,44 @@ body {
     margin: 0;
 }
 
+h1 {
+    margin: 0;
+}
+
 
 /*nav section*/
+.nav-logo {
+    width: 152.53px;
+    height: 25.22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rectangle {
+    width: 6px;
+    height: 25px;
+    border-radius: 2px;
+}
+
+.dark {
+    background: var(--main-theme-color);
+}
+
+.medium {
+    background: rgb(128, 125, 199);
+}
+
+.light {
+    background: rgb(158, 157, 196);
+}
+
 .nav-title {
     font-size: 24px;
     width: 112.77px;
@@ -33,7 +70,7 @@ body {
 
 .nav-toggle {
     font-size: 15px;
-    color: #fff;
+    color: var(--background-white-color);
     width: 276px;
     height: 48px;
     background: var(--main-theme-color);
