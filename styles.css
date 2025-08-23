@@ -5,13 +5,35 @@
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
     color: rgb(0, 1, 18);
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: bold;
     margin: 0;
 }
 
-/*********Typography*********/
 
+/*nav section*/
+.nav-title {
+    font-size: 24px;
+    width: 112.77px;
+    height: 24.61px;
+}
 
+.nav-boards-links {
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    color: rgb(130, 143, 163);
+    text-transform: uppercase;
+}
+
+.nav-toggle {
+    font-size: 15px;
+    color: #fff;
+    width: 276px;
+    height: 48px;
+    background: rgb(99, 95, 199);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
 
 
 
