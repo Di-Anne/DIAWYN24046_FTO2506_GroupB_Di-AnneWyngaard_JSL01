@@ -13,16 +13,8 @@
     <!-- Navigation Sidebar: Contains the logo, navigation links for boards, and theme toggle. -->
     <nav>
       <div class="nav-section">
-        <!--<div class="nav-logo">
-          <div class="nav-icon">
-            <div class="rectangle dark"></div>
-            <div class="rectangle medium"></div>
-            <div class="rectangle light"></div>
-          </div>
-          <h1 class="nav-title">kanban</h1>
-        </div>-->
-        <img class="nav-logo" src=""
-        <p class="nav-boards-links">ALL BOARDS (1)</p>
+        <img class="nav-logo" src="Group 16.png">
+        <p class="nav-boards-links">All boards (1)</p>
         <button class="nav-toggle">Launch Career</button>
       </div>
     </nav>
@@ -31,7 +23,7 @@
     <div>
       <header>
         <div>
-          <h2>Launch Career</h2>
+          <h2 class="launch-heading">Launch Career</h2>
         </div>
       </header>
 
@@ -39,38 +31,40 @@
         <main>
           <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
           <div>
-            <div>
+            <div class="todo-status">
               <span></span>
-              <h4>TODO</h4>
+              <p class="todo-title">Todo (4)</p>
             </div>
             <!-- Tasks container for TODO -->
-            <div>
-              <div>Launch Epic Career 🚀</div>
-              <div>Learn Data Structures and Algorithms 📚</div>
+            <div class="todo-card-container">
+              <div class="todo-card">Launch Epic Career 🚀</div>
+              <div class="todo-card">Conquer React ⚛️</div>
+              <div class="todo-card">Understanding Databases ⚙️</div>
+              <div class="todo-card">Crush Frameworks 🖼️</div>
             </div>
           </div>
           <!-- DOING Column -->
           <div>
-            <div>
+            <div class="doing-status">
               <span></span>
-              <h4>DOING</h4>
+              <p class="doing-title">Doing (2)</p>
             </div>
             <!-- Tasks container for DOING -->
-            <div>
-              <div>Master JavaScript 💛</div>
-              <div>Keep on Going 🏆</div>
+            <div class="doing-card-container">
+              <div class="doing-card">Master JavaScript 💛</div>
+              <div class="doing-card">Never Give Up 🏆</div>
             </div>
           </div>
           <!-- DONE Column -->
           <div>
-            <div>
+            <div class="done-status">
               <span></span>
-              <h4>DONE</h4>
+              <p class="done-title">Done (2)</p>
             </div>
             <!-- Tasks container for DONE -->
-            <div>
-              <div>Contribute to Open Source Projects 🌐</div>
-              <div>Build Portfolio Projects 🛠️</div>
+            <div class="done-card-container">
+              <div class="done-card">Explore ES6 Features 🚀</div>
+              <div class="done-card">Have fun 🥳</div>
             </div>
           </div>
         </main>

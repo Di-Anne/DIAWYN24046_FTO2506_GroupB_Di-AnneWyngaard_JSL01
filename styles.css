@@ -6,62 +6,23 @@
     --main-text-color: rgb(0, 1, 18);
     --subheading-grey-color: rgb(130, 143, 163);
     --main-theme-color: rgb(99, 95, 199); 
-    --background-white-color: #fff;   
+    --background-white-color: #fff;  
+    --background-offwhite-color: rgb(244, 247, 253); 
 }
 
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
     color: var(--main-text-color);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     margin: 0;
 }
 
-h1 {
-    margin: 0;
-}
+/*.nav-section {
+    border: 1px solid black;
+}*/
 
-
-/*nav section*/
-.nav-logo {
-    width: 152.53px;
-    height: 25.22px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-icon {
-    width: 24px;
-    height: 25px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.rectangle {
-    width: 6px;
-    height: 25px;
-    border-radius: 2px;
-}
-
-.dark {
-    background: var(--main-theme-color);
-}
-
-.medium {
-    background: rgb(128, 125, 199);
-}
-
-.light {
-    background: rgb(158, 157, 196);
-}
-
-.nav-title {
-    font-size: 24px;
-    width: 112.77px;
-    height: 24.61px;
-}
-
-.nav-boards-links {
+.nav-boards-links, .tasks-title {
     font-size: 12px;
     letter-spacing: 2.4px;
     color: var(--subheading-grey-color);
@@ -69,6 +30,7 @@ h1 {
 }
 
 .nav-toggle {
+    border: none;
     font-size: 15px;
     color: var(--background-white-color);
     width: 276px;
@@ -78,12 +40,35 @@ h1 {
     border-bottom-right-radius: 100px;
 }
 
+.launch-heading {
+    font-size: 24px;
+}
+
+main {
+    background: var(--background-offwhite-color);
+    height: 1192px;
+}
+
+.status {
+    border: 1px solid black;
+    display: flex;
+}
 
 
+.card-container {
+    border: 1px solid magenta;
+    display: grid;
+    grid-template-columns: repeat();
+}
+
+.card {
+    background-color: var(--background-white-color);
+    border-radius: 8px;
+    width: 280px;
+    height: 60px;
 
 
-
-/*********Layout*********/
+}
 
 
 
