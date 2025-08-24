@@ -111,15 +111,15 @@ main {
         display: none;
     }
 
-    .main-layout-container {
+    main {
         width: 375px;
-        height: 667px;
+        flex-direction: column;
     }
 
     header {
         width: 375px;
         height: 64px;
-}
+    }
 
     .launch-heading {
         display: none;
@@ -130,11 +130,4 @@ main {
         margin-top: 1em;
         margin-left: 1em;
     }
-
-    main {
-        flex-direction: column;
-    }
-
-    
-
 }
