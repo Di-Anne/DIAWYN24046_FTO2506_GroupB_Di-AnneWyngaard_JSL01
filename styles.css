@@ -5,6 +5,7 @@
 :root {
     --main-text-color: rgb(0, 1, 18);
     --subheading-grey-color: rgb(130, 143, 163);
+    --border-grey-color: rgb(228, 235, 250);
     --main-theme-color: rgb(99, 95, 199); 
     --background-white-color: #fff;  
     --background-offwhite-color: rgb(244, 247, 253); 
@@ -32,6 +33,7 @@ body {
 nav {
     width: 300px;
     height: 1024px;
+    border-right: 1px solid var(--border-grey-color);
 }
 
 .nav-logo {
@@ -61,6 +63,7 @@ nav {
 header {
     width: 1140px;
     height: 97px;
+    border-bottom: 1px solid var(--border-grey-color);
 }
 
 .launch-heading {
