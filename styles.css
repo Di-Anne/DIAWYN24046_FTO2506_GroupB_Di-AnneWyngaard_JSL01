@@ -17,7 +17,6 @@ body {
     font-weight: bold;
     margin: 0;
     display: flex;
-    
 }
 
 .nav-all-boards, .todo-title, .doing-title, .done-title {
@@ -104,3 +103,14 @@ main {
 
 
 /*********Media Queries*********/
+@media (max-width: 375px){
+    body {
+        flex-direction: row;  /*How to do responsive design for outer layer?!?!?*/
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+
+}
