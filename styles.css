@@ -77,9 +77,6 @@ header {
 
 
 /*main section*/
-.todo-title, .doing-title, .done-title {
-    margin-top: 0;
-}
 
 main {
     background: var(--background-offwhite-color);
@@ -88,6 +85,42 @@ main {
     width: 1140px;
     height: 927px;
     padding: 1.5em;
+}
+
+.todo-status, .doing-status, .done-status {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.todo-title, .doing-title, .done-title {
+    width: 90px;
+    margin: 0 auto;
+   
+}
+
+.todo-dot, .doing-dot, .done-dot {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+}
+
+.todo-dot {
+    background-color: #49C4E5;
+}
+
+.doing-dot {
+    background-color: #8471F2;
+}
+
+.done-dot {
+    background-color: #67E2AE;
+}
+
+.todo-card-container, .doing-card-container, .done-card-container {
+    margin-top: 20px;
 }
 
 .todo-card, .doing-card, .done-card {
