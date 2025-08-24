@@ -8,7 +8,10 @@
     --border-grey-color: rgb(228, 235, 250);
     --main-theme-color: rgb(99, 95, 199); 
     --background-white-color: #fff;  
-    --background-offwhite-color: rgb(244, 247, 253); 
+    --background-offwhite-color: rgb(244, 247, 253);
+    --todo-dot-color: #49C4E5;
+    --doing-dot-color: #8471F2;
+    --done-dot-color: #67E2AE;
 }
 
 body {
@@ -96,8 +99,7 @@ main {
 
 .todo-title, .doing-title, .done-title {
     width: 90px;
-    margin: 0 auto;
-   
+    margin: 0 auto;   
 }
 
 .todo-dot, .doing-dot, .done-dot {
@@ -108,15 +110,15 @@ main {
 }
 
 .todo-dot {
-    background-color: #49C4E5;
+    background-color: var(--todo-dot-color);
 }
 
 .doing-dot {
-    background-color: #8471F2;
+    background-color: var(--doing-dot-color);
 }
 
 .done-dot {
-    background-color: #67E2AE;
+    background-color: var(--done-dot-color);
 }
 
 .todo-card-container, .doing-card-container, .done-card-container {
