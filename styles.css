@@ -16,6 +16,8 @@ body {
     font-size: 15px;
     font-weight: bold;
     margin: 0;
+    display: flex;
+    
 }
 
 .nav-all-boards, .todo-title, .doing-title, .done-title {
@@ -25,7 +27,23 @@ body {
     text-transform: uppercase;
 }
 
+
+
 /*Nav Section*/
+nav {
+    border: 1px solid green;
+    width: 300px;
+    height: 1024px;
+}
+
+.nav-logo {
+    padding: 2em;
+}
+
+.nav-all-boards {
+    padding: 2em;
+}
+
 .nav-toggle {
     border: none;
     font-size: 15px;
@@ -35,25 +53,42 @@ body {
     background: var(--main-theme-color);
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
+    text-align: left;
+    padding-left: 3.5em;
 }
+
+
 
 /*header*/
-.launch-heading {
-    font-size: 24px;
+header {
+    border: 1px solid magenta;
+    width: 1140px;
+    height: 97px;
 }
 
+.launch-heading {
+    font-size: 24px;
+    height: 100%;
+    margin: 0;
+    padding: 1em;
+}
+
+
+
 /*main section*/
-.main-container {
-    background: var(--background-offwhite-color);
+.todo-title, .doing-title, .done-title {
+    margin-top: 0;
 }
 
 main {
+    background: var(--background-offwhite-color);
     border: 1px solid black;
-    height: 1192px;
     display: flex;
     gap: 20px;
+    width: 1140px;
+    height: 927px;
+    padding: 1.5em;
 }
-
 
 .todo-card, .doing-card, .done-card {
     background-color: var(--background-white-color);
@@ -62,7 +97,7 @@ main {
     width: 280px;
     height: 60px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
