@@ -18,17 +18,14 @@ body {
     margin: 0;
 }
 
-/*.nav-section {
-    border: 1px solid black;
-}*/
-
-.nav-boards-links, .tasks-title {
+.nav-all-boards, .todo-title, .doing-title, .done-title {
     font-size: 12px;
     letter-spacing: 2.4px;
     color: var(--subheading-grey-color);
     text-transform: uppercase;
 }
 
+/*Nav Section*/
 .nav-toggle {
     border: none;
     font-size: 15px;
@@ -40,34 +37,32 @@ body {
     border-bottom-right-radius: 100px;
 }
 
+/*header*/
 .launch-heading {
     font-size: 24px;
 }
 
-main {
+/*main section*/
+.main-container {
     background: var(--background-offwhite-color);
-    height: 1192px;
 }
 
-.status {
+main {
     border: 1px solid black;
+    height: 1192px;
     display: flex;
+    gap: 20px;
 }
 
 
-.card-container {
-    border: 1px solid magenta;
-    display: grid;
-    grid-template-columns: repeat();
-}
-
-.card {
+.todo-card, .doing-card, .done-card {
     background-color: var(--background-white-color);
     border-radius: 8px;
+    padding: 1em;
     width: 280px;
     height: 60px;
-
-
+    margin-bottom: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 
