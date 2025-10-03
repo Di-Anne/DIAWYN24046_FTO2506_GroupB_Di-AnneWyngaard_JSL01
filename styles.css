@@ -177,7 +177,7 @@ body {
 
 
 /* =========== Responsive styles =========== */
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .side-nav-bar {
     display: none; /* Hide side-nav-bar tablets and smaller screens*/
   }
@@ -192,29 +192,12 @@ body {
     grid-template-columns: repeat(2, minmax(0, 360px));
     gap: 8px;
   }
+}
 
 @media (max-width: 375px) {
-  nav {
-    display: none;
-  }
-
-  main {
-    width: 375px;
-    flex-direction: column;
-  }
-
-  header {
-    width: 375px;
-    height: 64px;
-  }
-
-  .launch-heading {
-    display: none;
-  }
-
-  .visually-hidden {
-    display: revert;
-    margin-top: 1em;
-    margin-left: 1em;
+ 
+  .tasks-grid {
+    grid-template-columns: minmax(0, 360px); /*Stack columns in a single column on mobile view*/
+    gap: 8px;
   }
 }
