@@ -113,6 +113,7 @@ body {
 }
 
 .column-div {
+  border: 1px solid magenta;
   display: flex;
   flex-direction: column;
   flex: 1; 
@@ -194,10 +195,14 @@ body {
   }
 }
 
-@media (max-width: 375px) {
- 
+@media (max-width: 580px) {
   .tasks-grid {
-    grid-template-columns: minmax(0, 360px); /*Stack columns in a single column on mobile view*/
+    grid-template-columns: minmax(0, 380px); /*Stack columns in a single column on mobile view*/
     gap: 8px;
   }
+
+    .column-div {
+    padding: 24px;
+  }
+
 }
