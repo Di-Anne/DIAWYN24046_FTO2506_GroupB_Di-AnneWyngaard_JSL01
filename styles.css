@@ -82,7 +82,6 @@ body {
 .main-layout-container {
   flex: 1; /*Allows main-layout to fill remain space of body*/
   overflow-x: hidden; /*Prevent horizontal scroll*/
-  /*width: 100%;*/
 }
 
 
