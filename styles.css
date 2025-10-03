@@ -101,9 +101,6 @@ body {
   align-items: center;
 }
 
-.visually-hidden {
-  display: none; /*Kanban logo hidden on desktop but shown on smaller screens*/
-}
 
 /* =========== Card grid =========== */
 .main-tasks-container {
