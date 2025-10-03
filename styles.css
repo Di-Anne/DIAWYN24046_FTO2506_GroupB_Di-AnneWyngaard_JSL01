@@ -102,8 +102,8 @@ body {
 
 /* =========== Card grid =========== */
 .main-tasks-container {
-  /*display: flex;
-  flex-direction: column; This somehow ensures container is justify centered*/
+  display: flex;
+  flex-direction: column; 
   padding-left: 35px;
 }
 
@@ -126,7 +126,7 @@ body {
   display: flex;
   width: 120px;
   justify-content: space-between;
-  align-items: baseline;
+  margin-top: 20px;
 }
 
 .todo-title,
@@ -174,7 +174,25 @@ body {
   cursor: pointer;
 }
 
-/*********Media Queries*********/
+
+
+/* =========== Responsive styles =========== */
+@media screen and (max-width: 1023px) {
+  .side-nav-bar {
+    display: none; /* Hide side-nav-bar tablets and smaller screens*/
+  }
+
+  .main-tasks-container {
+    align-items: center; /*Ensures columns centered horizontally on smaller screens*/
+    padding: 0;
+    width: 100%;
+  }
+
+  .tasks-grid {
+    grid-template-columns: repeat(2, minmax(0, 360px));
+    gap: 8px;
+  }
+
 @media (max-width: 375px) {
   nav {
     display: none;
