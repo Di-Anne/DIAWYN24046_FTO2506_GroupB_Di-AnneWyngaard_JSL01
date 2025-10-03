@@ -100,14 +100,16 @@ body {
   display: none; /*Kanban logo hidden on desktop but shown on smaller screens*/
 }
 
-/*********Main section*********/
-main {
-  background: var(--background-offwhite-color);
-  display: flex;
-  gap: 20px;
-  width: 100%;
-  height: 100vh;
-  padding: 1.5em;
+/* =========== Card grid =========== */
+.main-tasks-container {
+  /*display: flex;
+  flex-direction: column; This somehow ensures container is justify centered*/
+  padding-left: 35px;
+}
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 304px)); /*3 columns with max size*/
 }
 
 .todo-status,
