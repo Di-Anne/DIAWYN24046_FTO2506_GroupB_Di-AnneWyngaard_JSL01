@@ -96,10 +96,6 @@ body {
   border-bottom: 1px solid var(--border-grey-color);
 }
 
-.launch-heading {
-  
-}
-
 .visually-hidden {
   display: none; /*Kanban logo hidden on desktop but shown on smaller screens*/
 }
