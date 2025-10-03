@@ -112,6 +112,13 @@ body {
   grid-template-columns: repeat(3, minmax(0, 304px)); /*3 columns with max size*/
 }
 
+.column-div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+}
+
 .todo-status,
 .doing-status,
 .done-status {
@@ -155,9 +162,7 @@ body {
   margin-top: 20px;
 }
 
-.todo-card,
-.doing-card,
-.done-card {
+.card {
   background-color: var(--background-white-color);
   border-radius: 8px;
   padding: 1em;
