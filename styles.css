@@ -118,7 +118,7 @@ body {
 .tasks-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 304px)); /*3 columns with max size*/
-  gap: 8px; /*Space between column*/
+  gap: 20px; /*Space between columns*/
 }
 
 .column-div {
@@ -202,10 +202,23 @@ body {
 
   .tasks-grid {
     grid-template-columns: repeat(2, minmax(0, 360px));
+    gap: 0;
   }
 
   .column-div {
-    padding: 24px; /*Ensures cards are not tight against sides of tablet screen*/
+    padding: 24px; /*Ensures card columns are not tight against each other*/
+  }
+
+  .todo {
+    padding-bottom: 10px;
+  }
+
+   .doing {
+    padding-left: 10px; /*Removes double spacing between todo and doing columns*/
+  }
+
+   .done {
+    padding-top: 0; /*Removes double spacing between todo and done columns*/
   }
 }
 
@@ -219,6 +232,10 @@ body {
   }
 
   .column-div {
-    padding: 24px; /*Ensures cards are not tight against sides of mobile screen*/
+    padding: 24px;  /*Ensures card columns are not tight against each other*/
+  }
+
+  .todo, .doing, .done {
+    padding-bottom: 0; /*Removes double spacing between todo and doing, doing and done columns*/
   }
 }
